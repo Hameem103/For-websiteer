@@ -1,3 +1,3 @@
 function contactAlert() {
-  alert("Thanks for your interest! We will contact you soon.");
+  alert('Contact us at 01842026754 via WhatsApp!');
 }
