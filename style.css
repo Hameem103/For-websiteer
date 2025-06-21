@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+header {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.hero {
+  text-align: center;
+  padding: 50px;
+  background: #e0f7fa;
+}
+button {
+  padding: 10px 20px;
+  background: #00796b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero h2, .content h2 {
+    font-size: 22px;
+  }
+
+  .hero p, .content p {
+    font-size: 16px;
+  }
+
+  button {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
