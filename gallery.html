@@ -4,19 +4,6 @@
   <meta charset="UTF-8">
   <title>Gallery - Hamim's Digital Services</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      padding: 20px;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -30,13 +17,28 @@
   </header>
 
   <section class="gallery">
-    <img src="images/gallery/1.png" alt="Sample Image 1">
-    <img src="images/gallery/2.png" alt="Sample Image 2">
-    <img src="images/gallery/3.png" alt="Sample Image 3">
+    <img src="images/gallery/1.png" alt="Sample Image 1" onclick="openLightbox(this.src)">
+    <img src="images/gallery/2.png" alt="Sample Image 2" onclick="openLightbox(this.src)">
+    <img src="images/gallery/3.png" alt="Sample Image 3" onclick="openLightbox(this.src)">
   </section>
+
+  <div id="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
 
   <footer>
     <p>&copy; 2025 Hamim's Digital. All rights reserved.</p>
   </footer>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById("lightbox").style.display = "flex";
+      document.getElementById("lightbox-img").src = src;
+    }
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
 </body>
 </html>
