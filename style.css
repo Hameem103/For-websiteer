@@ -4,9 +4,10 @@ body {
   padding: 0;
 }
 header {
-  background-color: #333;
+  background: #333;
   color: white;
-  padding: 1em;
+  padding: 10px;
+  text-align: center;
 }
 nav a {
   color: white;
@@ -14,22 +15,21 @@ nav a {
   text-decoration: none;
 }
 .hero {
+  padding: 40px;
   text-align: center;
-  padding: 50px;
-  background-color: #f4f4f4;
 }
-footer {
-  background-color: #333;
+button {
+  background: #007BFF;
   color: white;
-  text-align: center;
-  padding: 1em;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
-
-/* Responsive Design */
 @media (max-width: 768px) {
+  header, .hero {
+    padding: 20px;
+  }
   nav a {
     display: block;
     margin: 5px 0;

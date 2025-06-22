@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hameem103.github.io/For-websiteer/sitemap.xml

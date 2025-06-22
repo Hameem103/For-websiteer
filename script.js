@@ -1,3 +1,3 @@
 function contactAlert() {
-  alert('Contact us at 01842026754 via WhatsApp!');
+  alert("You can contact us via the form or WhatsApp: https://wa.me/8801842026754");
 }
