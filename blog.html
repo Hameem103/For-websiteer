@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog - Hamim's Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Our Blog</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </header>
+
+  <main style="padding: 20px;">
+    <ul id="blogList" style="line-height: 2;">
+      <!-- Blog post list will appear here -->
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hamim's Blog. All rights reserved.</p>
+  </footer>
+
+  <script src="blog-data.js"></script>
+  <script>
+    const blogList = document.getElementById("blogList");
+
+    blogPosts.forEach(post => {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = `blog-template.html?post=${post.slug}`;
+      a.textContent = post.title + " - " + post.date;
+      li.appendChild(a);
+      blogList.appendChild(li);
+    });
+  </script>
+</body>
+</html>
